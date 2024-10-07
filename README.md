@@ -1,1 +1,1 @@
-# sentisis-fullstack-challenge
+# Sentisis FullStack Challenge
