@@ -11,3 +11,5 @@ The challenge requires the use of React as the only mandatory library and use No
 - [TailwindCSS](https://tailwindcss.com/): I have chosen to use TailwindCSS as a utility-first CSS framework because it allows me to create a responsive design quickly and easily, without having to write custom CSS.
 
 - [MongoDB](https://www.mongodb.com/): I have chosen to use MongoDB as a database because it is a NoSQL database that is very useful for projects where models are not defined in advance and can change over time (adding or removing fields). In addition, I have chosen it for its free level (for production) and the ability to run it locally (and the CI pipeline), perfect for defining a development and testing environment.
+
+- [Prisma](https://www.prisma.io/): I have chosen to use Prisma as an ORM because it allows me to define the database schema in a declarative way and generate the client to interact with the database. It also allows me to migrate the database easily and quickly.
