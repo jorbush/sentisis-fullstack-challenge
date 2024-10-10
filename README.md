@@ -4,7 +4,22 @@ A technical challenge for a FullStack position at Sentisis
 
 The challenge is defined [here](./docs/challenge.md) and the decisions made during the development are [here](./docs/decisions.md).
 
-## How to run the project locally
+## Requirements
+
+- [NodeJS](https://nodejs.org/en/)
+- [MongoDB](https://www.mongodb.com/) (locally or using a provider like [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)). See [Other Commands](./docs/other_commands.md#prisma) for more information.
+
+## Setup
+
+You need to create a `.env` file in the root of the project with the following content:
+
+```
+DATABASE_URL="mongodb://localhost:27017/sentisis-challenge"
+```
+
+This is the url in the case you are using MongoDB locally. You can use MongoDB Atlas or any other MongoDB provider and change the url accordingly.
+
+## Run the project locally
 
 ```bash
 npm run dev
@@ -12,14 +27,15 @@ npm run dev
 
 This will start the development server at [http://localhost:3000](http://localhost:3000).
 
-## How to run the project in production
+## Run the project in production mode
 
 ```bash
+npx prisma generate
 npm run build
 npm run start
 ```
 
-## How to run the tests
+## Testing
 
 _TODO_
 

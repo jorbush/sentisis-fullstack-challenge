@@ -15,3 +15,19 @@ brew services start mongodb-community@8.0
 ```bash
 brew services stop mongodb-community@8.0
 ```
+
+## Prisma
+
+If is the first time you are running the project, you need to run the following commands:
+
+### Generate Prisma Client
+
+```bash
+npx prisma generate
+```
+
+### Migrate Database
+
+```bash
+npx prisma db push
+```

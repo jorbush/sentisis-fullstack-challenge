@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+enum Type {
+  SHOW
+  TALK
+  GHOST
+  MUSICAL
+}
+
+enum Currency {
+  EURO
+}
+
+model Item {
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
+  type        Type
+  releaseDate DateTime
+  description String
+  price       Int
+  currency    Currency
+}
