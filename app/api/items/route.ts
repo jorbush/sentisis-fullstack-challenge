@@ -5,7 +5,7 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { title, type, releaseDate, description, price, currency } = body;
 
-    Object.keys(body).forEach((value: any) => {
+    Object.keys(body).forEach((value: keyof typeof body) => {
         if (!body[value]) {
             NextResponse.error();
         }
